@@ -1,0 +1,30 @@
+.autocomplete {
+    max-height: 0;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    border-radius: 22px;
+    box-shadow: 0 1px 6px 0 var(--box-shadow-color);
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.active {
+    padding-top: 44px;
+    padding-bottom: .5rem;
+    max-height: 30vh;
+    overflow-y: scroll;
+}
+
+.autocomplete li {
+    margin: 0;
+    padding: .75rem 1.25rem;
+    cursor: pointer;
+}
+
+.autocomplete li:hover {
+    background-color: var(--box-shadow-color);
+}
